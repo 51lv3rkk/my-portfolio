@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  color: #fff;
+  line-height: 1.6;
+  background-color: #1a1a1a;
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+main {
+  max-width: 35%;
+  margin: 2rem auto;
+  padding: 0;
+  z-index: 1;
+  height: 100vh;
+}
+
+a {
+  color: #fff;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+}
+
+.site-header {
+  background-color: #000; 
+  padding:  1rem; 
+  border: 2px solid rgba(255, 255, 255, 0.1) ; /*  rgba(255, 255, 255, 0.1)*/
+  border-radius: 5px;
+  position: relative; 
+  width: 95%;
+}
+
+.site-header::before {
+  content: '';
+  width: 40%;
+  height: 1rem;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  position: relative; 
+  z-index: 2;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+.info h1 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.info p {
+  color: #fff;
+  font-size: 0.8rem;
+  margin: 0;
+  opacity: 0.7;
+  
+}
+
+.social-links {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #c4c4c4;
+}
+
+
+/* Media */
+@media (max-width: 666px) {
+  main {
+    max-width: 90%;
+  }
+  .site-header {
+    padding: 0.5rem;
+    width: 95%;
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .avatar {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .info h1 {
+    font-size: 1.5rem;
+  }
+  
+  .info p {
+    font-size: 1rem;
+  }
+  
+  .social-links {
+    margin-top: 1rem;
+  }
+}
+
+.btn-white-outline {
+  font-family: monospace;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid rgba(109, 109, 109, 0.178);
+  border-radius: 5px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+  transition: all 0.4s ease;
+}
+
+.btn-white-outline:hover {
+  background-color: #333;
+}
+
+#intro {
+  font-family: monospace;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem 2rem;
+  color: #fff;
+  max-width: 100%;
+  margin: 60px auto 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  /* animation: fadeIn 1.5s ease-in-out;  */
+  transition: all 0.3s ease;
+}
+
+.intro-content h1 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+}
+
+.intro-content p {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  opacity: 0.9; 
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+/* Card Test */
+card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+/* 
+.card h2 {
+  font-size: 1rem;
+  margin-bottom: 0.1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+} */
+
+/* Skill */
+#skills {
+    background-color: #000; /* Nền đen */
+    padding: 3rem 2rem;
+    color: #0f0; /* Màu xanh lá cho text, giống mã code */
+    font-family: 'Courier New', Courier, monospace; /* Font chữ terminal */
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Skill */
+.skill .skill-content h2 {
+  font-size: 1.2rem;
+}
+.skill .skill-content .skills p {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+.skill .skill-content .skills p span {
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: bold;
+
+}
+
+/* Projects */
+#projects {
+  background-color: #0000001c; /* Nền đen */
+  padding: 0;
+  text-align: center;
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#projects h2 {
+  text-align: start;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid tự động điều chỉnh */
+  gap: 1rem; /* Khoảng cách giữa các card */
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.014);
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.096);
+  border-radius: 10px;
+  /* box-shadow: 0 0 15px rgba(128, 128, 128, 0.1); */
+  transition: all 0.3s ease; 
+  overflow: hidden; 
+}
+
+.project-card:hover {
+  background-color: rgba(255, 255, 255, 0.043); 
+  transform: scale(1.05);
+  /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);  */
+}
+
+.project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  /* margin-bottom: 1rem; */
+}
+
+.project-card h3 {
+  font-size: 1rem;
+}
+
+.project-card p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.hidden {
+  display: none;
+}
+
+.show-more-btn {
+  font-family: monospace;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 768px) {
+  #projects {
+      padding: 2rem 1rem;
+  }
+
+  #projects h2 {
+      font-size: 1.8rem;
+  }
+
+  .project-grid {
+      grid-template-columns: 1fr; /* 1 cột trên mobile */
+  }
+
+  .project-img {
+      height: 150px;
+  }
+
+  .project-card h3 {
+      font-size: 1.2rem;
+  }
+
+  .project-card p {
+      font-size: 0.9rem;
+  }
+
+  .show-more-btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+  }
+}

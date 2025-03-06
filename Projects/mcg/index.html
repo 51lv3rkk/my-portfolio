@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Card Game</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .game-container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff3cd;
+        border: 5px solid #ffc107;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        margin: 20px 0;
+      }
+      .card {
+        width: 100px;
+        height: 100px;
+        background-color: #ffc107;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: transform 0.3s;
+      }
+      .card.flipped {
+        background-color: #fff;
+        transform: rotateY(180deg);
+      }
+      .card.matched {
+        background-color: #28a745;
+        cursor: default;
+      }
+      .stats {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      #stopGameBtn {
+        background-color: #343a40;
+        color: white;
+      }
+      .btn-back {
+        background-color: #343a40;
+        color: white;
+        padding: 4px 20px;
+        border-radius: 5px;
+      }
+      a {
+        color: white;
+        text-decoration: none; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game-container">
+      <h2 class="mb-4">Memory Card Game</h2>
+      <div class="stats">
+        Lượt: <span id="moveCount">0</span> | Thời gian:
+        <span id="time">00:00</span>
+      </div>
+      <div class="card-grid" id="cardGrid"></div>
+      <button class="btn" id="stopGameBtn">Dừng trò chơi</button>
+      <button class="btn-back"><a href="/">Quay lại</a></button>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
